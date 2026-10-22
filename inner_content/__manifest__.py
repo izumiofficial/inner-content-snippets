@@ -19,15 +19,17 @@ Long description of module's purpose
     'data': [
         # 'security/ir.model.access.csv',
         'views/snippets.xml',
+        'views/snippet_options.xml',
     ],
     'assets': {
-        'website.website_builder_assets': [
-            'inner_content/static/src/js/inner_content_plugin.js',
-        ],
         'web.assets_frontend': [
-            'inner_content/static/src/scss/inner_content_slides.scss',
+            'inner_content/static/src/js/frontend.js',
         ],
-    }
+        'website.assets_wysiwyg': [
+            'inner_content/static/src/js/options.js',
+        ],
+    },
+
     'installable': True,
     'application': False,
     'license': 'GPL-3.0'

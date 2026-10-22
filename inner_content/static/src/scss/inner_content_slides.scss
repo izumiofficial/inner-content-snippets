@@ -1,0 +1,16 @@
+.s_inner_content_slides {
+   background-color: rgba($primary, 0.05);
+   border: 2px dashed rgba($primary, 0.2);
+   border-radius: 8px;
+   padding: 20px;
+   margin: 10px 0;
+   transition: all 0.3s ease;
+   &:hover {
+       background-color: rgba($primary, 0.1);
+       border-color: $primary;
+   }
+   h3 {
+       color: $primary;
+       font-weight: bold;
+   }
+}

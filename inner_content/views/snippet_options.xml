@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_inner_image_slider_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <!-- The data-js attribute must match the registry name in options.js -->
+            <div data-js="s_inner_image_slider_options" data-selector=".s_inner_image_slider">
+                <we-row string="Slider Controls">
+                    <!-- data-addSlide and data-removeSlide map directly to the JS functions -->
+                    <we-button data-addSlide="true" data-no-preview="true" class="o_we_bg_success">
+                        <i class="fa fa-plus"/> Add Slide
+                    </we-button>
+                    <we-button data-removeSlide="true" data-no-preview="true" class="o_we_bg_danger">
+                        <i class="fa fa-trash"/> Remove Slide
+                    </we-button>
+                </we-row>
+            </div>
+        </xpath>
+    </template>
+</odoo>

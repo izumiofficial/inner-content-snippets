@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_inner_image_slider" name="Inner Image Slider">
+        <section class="s_inner_image_slider pt16 pb16">
+            <div class="container-fluid">
+                <!-- Removed hardcoded ID -->
+                <div class="carousel slide custom-inner-carousel" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-slide-to="1"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded-3 shadow-sm">
+                        <div class="carousel-item active">
+                            <img src="/web/image/website.s_carousel_default_image_1" class="d-block w-100" alt="Slide 1"/>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/web/image/website.s_carousel_default_image_2" class="d-block w-100" alt="Slide 2"/>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Register to Inner Content -->
+    <template id="snippets_custom_inner_slider" inherit_id="website.snippets" name="Custom Inner Content Snippets">
+        <xpath expr="//div[@id='snippet_inner_content']" position="inside">
+            <t t-snippet="your_module_name.s_inner_image_slider" t-thumbnail="/your_module_name/static/src/img/thumb.png"/>
+        </xpath>
+    </template>
+</odoo>
