@@ -32,6 +32,6 @@ Long description of module's purpose
 
     'installable': True,
     'application': False,
-    'license': 'GPL-3.0'
+    'license': 'LGPL-3'
 }
 
