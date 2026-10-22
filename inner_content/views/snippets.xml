@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_inner_image_slider" name="Inner Image Slider">
-        <div class="s_inner_image_slider pt16 pb16" data-drop-in=".oe_structure, [data-oe-type=html], .row > div, .s_text_block">
+        <!-- Added data-snippet and data-name here -->
+        <div class="s_inner_image_slider pt16 pb16" data-snippet="s_inner_image_slider" data-name="Inner Image Slider" data-drop-in=".oe_structure, [data-oe-type=html], .row > div, .s_text_block">
             <div class="container-fluid">
-                <!-- Removed hardcoded ID -->
                 <div class="carousel slide custom-inner-carousel" data-bs-ride="carousel">
 
                     <div class="carousel-indicators">
@@ -33,7 +33,6 @@
         </div>
     </template>
 
-    <!-- Register to Inner Content -->
     <template id="snippets_custom_inner_slider" inherit_id="website.snippets" name="Custom Inner Content Snippets">
         <xpath expr="//snippets[@id='snippet_content']" position="inside">
             <t t-snippet="inner_content.s_inner_image_slider" t-thumbnail="/inner_content/static/src/img/s_inner_content_slides.png"/>
