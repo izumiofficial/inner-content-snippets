@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="s_inner_image_slider" name="Inner Image Slider">
-        <section class="s_inner_image_slider pt16 pb16">
+        <div class="s_inner_image_slider pt16 pb16">
             <div class="container-fluid">
                 <!-- Removed hardcoded ID -->
                 <div class="carousel slide custom-inner-carousel" data-bs-ride="carousel">
@@ -30,7 +30,7 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </div>
     </template>
 
     <!-- Register to Inner Content -->
