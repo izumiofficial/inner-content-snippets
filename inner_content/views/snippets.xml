@@ -35,8 +35,16 @@
 
     <!-- Register to Inner Content -->
     <template id="snippets_custom_inner_slider" inherit_id="website.snippets" name="Custom Inner Content Snippets">
-        <xpath expr="//div[@id='snippet_inner_content']" position="inside">
+        <xpath expr="//div[@id='snippet_content']" position="inside">
             <t t-snippet="your_module_name.s_inner_image_slider" t-thumbnail="/your_module_name/static/src/img/thumb.png"/>
         </xpath>
     </template>
+
+<!--    &lt;!&ndash; Snippet Registration &ndash;&gt;-->
+<!--    <template id="snippets_custom_inner_slider" inherit_id="website.snippets" name="Custom Inner Content Snippets">-->
+<!--        &lt;!&ndash; Target snippet_custom instead of snippet_inner_content &ndash;&gt;-->
+<!--        <xpath expr="//div[@id='snippet_custom']" position="inside">-->
+<!--            <t t-snippet="inner_content.s_inner_image_slider" t-thumbnail="/inner_content/static/src/img/thumb.png"/>-->
+<!--        </xpath>-->
+<!--    </template>-->
 </odoo>
