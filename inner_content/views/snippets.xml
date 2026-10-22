@@ -35,7 +35,7 @@
 
     <!-- Register to Inner Content -->
     <template id="snippets_custom_inner_slider" inherit_id="website.snippets" name="Custom Inner Content Snippets">
-        <xpath expr="//div[@id='snippet_content']" position="inside">
+        <xpath expr="//snippets[@id='snippet_content']" position="inside">
             <t t-snippet="your_module_name.s_inner_image_slider" t-thumbnail="/your_module_name/static/src/img/thumb.png"/>
         </xpath>
     </template>
